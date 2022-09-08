@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/extra.css">
 </head>
 <body>
     <header> <!--Header-->
@@ -43,16 +44,20 @@
 
     <main>
         <section><!--Hero Section-->
-                    <div class="text-center bg-image img-fluid" style="background-image: url('images/profile.jpg');">
-                        <!-- <img src="images/profile.jpg"
-                        class="bg-image" 
-                        alt="me"> -->
-                        <button type="button" class="btn btn-dark">Dark</button>
-                    </div>
+            <div class="hero text-center text-light bg-image d-flex flex-column mb-2 justify-content-around" style="background-image: url('images/profile.jpg');">
+                <div class="p-2">
+                    <h1>Hi, I'm Spike</h1>
+                    <h3>I'm a freelance web developer.</h3>
+                </div>
+                <div class="p-2 d-flex justify-content-around">
+                    <button type="button" class="btn btn-dark">Contact</button>
+                    <button type="button" class="btn btn-dark">Portfolio</button>
+                </div>
+            </div>
         </section>
 
         <section><!--Socail Proof-->
-            <div class="container text-center">
+            <div class="container text-center bg-primary">
                 <div class="row">
                     <div class="col">
                         <p>Changing text on hover</p>

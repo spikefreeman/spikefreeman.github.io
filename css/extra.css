@@ -1,0 +1,5 @@
+.hero{
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+}
