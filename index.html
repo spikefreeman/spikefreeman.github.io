@@ -10,7 +10,7 @@
 </head>
 <body>
     <header> <!--Header-->
-        <nav class="navbar" style="background-color:#F7E8D3">
+        <nav class="navbar navbar-expand-lg" style="background-color:#F7E8D3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/alogo-2.png" alt="Logo" width="60" height="48" class="d-inline-block"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -44,26 +44,31 @@
 
     <main>
         <section id="Home"><!--Hero Section-->
-            <div class="row hero text-center text-light bg-image d-flex flex-column justify-content-center" style="background-image: url('images/profile.jpg');">
-                <div class="col col-lg-7 d-flex flex-column justify-content-center p-2">
-                    <p class="display-1 fw-bold">Hi, I'm Spike</p>
-                    <p class="display-4">I'm a freelance web developer.</p>
+            <div class="row hero text-center change-text bgimg d-flex g-0">
+                <div class="col col-lg-7 d-flex justify-content-center flex-column justify-content-around p-2">
+                    <div>
+                        <p class="display-1 fw-bold">Hi, I'm Spike</p>
+                        <p class="display-4">I'm a freelance web developer.</p>
+                    </div>
+                    <div class="d-flex justify-content-around ">
+                        <button type="button" class="btn btn-dark">Contact</button>
+                        <button type="button" class="btn btn-dark">Portfolio</button>
+                    </div>
                 </div>
-                <div class="col col-lg-7 p-2 d-flex justify-content-around align-items-center">
-                    <button type="button" class="btn btn-dark">Contact</button>
-                    <button type="button" class="btn btn-dark">Portfolio</button>
+                <div class="col d-none d-lg-block col-lg-5">
+                    <img class="d-none d-lg-block p-3 img-fluid rounded" src="images/profile.jpg" alt="Picture of me">
                 </div>
             </div>
         </section>
 
-        <section ><!--Socail Proof-->
+        <section class="bg-primary"><!--Socail Proof-->
             <div class="container text-center bg-primary">
-                <div class="row pt-2">
+                <div class="row pt-3">
                     <div class="col">
                         <p>Changing text on hover</p>
                     </div>
                 </div>
-                <div class="row d-flex align-items-center">
+                <div class="row d-flex justify-content-between align-items-center">
                     <div class="col">
                         <img src="images/Treehouse-Logo.png" 
                         class="img-fluid"  

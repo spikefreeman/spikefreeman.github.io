@@ -3,3 +3,21 @@
     min-height: 60vh;
     position: relative;
 }
+
+
+.bgimg {
+    background-image: url('../images/profile.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+@media (min-width: 767px){
+    .bgimg{
+        background-image: none;
+        background-color: #F7E8D3;
+        width: 100% ;
+    }
+}
+
+
