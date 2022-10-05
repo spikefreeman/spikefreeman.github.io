@@ -24,16 +24,16 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#About">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#Port">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#Contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -44,26 +44,26 @@
 
     <main>
         <section id="Home"><!--Hero Section-->
-            <div class="row hero text-center change-text bgimg d-flex g-0">
+            <div class="row hero text-center change-text bgimg d-flex g-0 mb-5">
                 <div class="col col-lg-7 d-flex justify-content-center flex-column justify-content-around p-2">
                     <div>
                         <p class="display-1 fw-bold">Hi, I'm Spike</p>
                         <p class="display-4">I'm a freelance web developer.</p>
                     </div>
-                    <div class="d-flex justify-content-around ">
-                        <button type="button" class="btn btn-dark">Contact</button>
-                        <button type="button" class="btn btn-dark">Portfolio</button>
+                    <div class="d-flex justify-content-around">
+                        <a href="#Contact"><button type="button" class="btn btn-dark btn-lg">Contact</button></a>
+                        <a href="#Port"><button type="button" class="btn btn-dark btn-lg">Portfolio</button></a>
                     </div>
                 </div>
                 <div class="col d-none d-lg-block col-lg-5">
-                    <img class="d-none d-lg-block p-3 img-fluid rounded" src="images/profile.jpg" alt="Picture of me">
+                    <img class="rounded p-3 img-fluid " src="images/profile.jpg" alt="Picture of me">
                 </div>
             </div>
         </section>
 
         <section class="bg-primary"><!--Socail Proof-->
-            <div class="container text-center bg-primary">
-                <div class="row pt-3">
+            <div class="container text-center bg-primary pb-5">
+                <div class="row pt-4 pb-3">
                     <div class="col">
                         <p>Changing text on hover</p>
                     </div>
@@ -71,17 +71,17 @@
                 <div class="row d-flex justify-content-between align-items-center">
                     <div class="col">
                         <img src="images/Treehouse-Logo.png" 
-                        class="img-fluid"  
+                        class="img-fluid icon"  
                         alt="treehouse">
                     </div>
                     <div class="col">
                         <img src="images/time-logo-transparent.png" 
-                        class="img-fluid" 
+                        class="img-fluid icon" 
                         alt="time">
                     </div>
                     <div class="col">
                         <img src="images/alogo-2.png" 
-                        class="img-fluid"  
+                        class="img-fluid icon"  
                         alt="placeholder">
                     </div>
                 </div>
@@ -91,48 +91,38 @@
         <section id="About"><!--About-->
             <div class="containter text-center p-3 bg-secondary">
                 <div class="row">
-                    <h1>About Me</h1>
-                </div>
-                <div class="row">
-                    <p>I have a range of experience in both creative and techincal areas.</p>
-                </div>
-                <div class="row">
-                    <p>I can create websites from first idea right down to release, starting with design and then the techincal building of the site itself.</p>
-                </div>
-                <div class="row">
-                    <p>I also have experience using these tools, some spesifically for web design, other for general creative work</p>
-                </div>
-                <div class="row align-items-center mb-5">
-                    <div class="col">
-                        <img src="images/HTML5_Logo_512.png" class="img-fluid">
+                    <div class="col d-none d-md-block">
+                        <img src="images/Placeholder.jpg" alt="placeholder" class="p-5">
                     </div>
-                    <div class="col">
-                        <img src="images/CSS3_logo_and_wordmark.svg.png" class="img-fluid">
-                    </div>
-                    <div class="col">
-                        <img src="images/Bootstrap_logo.svg.png" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <img src="images/Unofficial_JavaScript_logo_2.svg.png" class="img-fluid">
-                    </div>
-                    <div class="col">
-                        <img src="images/Figma-logo.svg" class="img-fluid">
-                    </div>
-                    <div class="col">
-                        <img src="images/Notion_app_logo.png" class="img-fluid">
+                    <div class="col d-flex flex-column justify-content-around">
+                        <div class="row d-flex justify-content-around align-items-center">
+                            <h1 class="">About Me</h1>
+                            <p class="">I have a range of experience in both creative and techincal areas.</p>
+                            <p class="">I can create websites from first idea right down to release, starting with design and then the techincal building of the site itself.</p>
+                            <p class="">I also have experience using these tools, some spesifically for web design, other for general creative work</p>
+                        </div>
+                        <div class="row align-items-center justify-content-around pt-3 mb-5">
+                            <img src="images/HTML5_Logo_512.png" class="img-fluid icon">
+                            <img src="images/CSS3_logo_and_wordmark.svg.png" class="img-fluid icon">
+                            <img src="images/Bootstrap_logo.svg.png" class="img-fluid icon">
+                        </div>
+                        <div class="row align-items-center justify-content-around flex-end">
+                            <img src="images/Unofficial_JavaScript_logo_2.svg.png" class="img-fluid icon">
+                            <img src="images/Figma-logo.svg" class="img-fluid icon">
+                            <img src="images/Notion_app_logo.png" class="img-fluid icon">
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
         <section id="Port"><!--Portfolio-->
             <div class="containter text-center">
                 <div class="row p-2">
-                    <h1>My Portfolio</h1>
+                    <h1 class="p-5">My Portfolio</h1>
                 </div>
-                <div class="row">
+                <div class="row p-5">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -158,12 +148,13 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
-                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="Contact"><!--Contact-->
+            <p class="h1 ps-4 mt-3">Contact:</p>
             <div class="row m-3">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -177,10 +168,10 @@
             </div> 
             <div class="row text-center mb-3">
                 <div class="col">
-                    <a href="https://www.linkedin.com/in/spike-freeman-144290174/" target="_blank"><img src="images/linkedin.svg" class="d-inline w-50"></a>
+                    <a href="https://www.linkedin.com/in/spike-freeman-144290174/" target="_blank"><img src="images/linkedin.svg" class="d-inline w-50 icon"></a>
                 </div>
                 <div class="col">
-                    <a href="https://github.com/spikefreeman" target="_blank"><img src="images/github.svg" class="d-inline w-50"></a>
+                    <a href="https://github.com/spikefreeman" target="_blank"><img src="images/github.svg" class="d-inline w-50 icon"></a>
                 </div>
             </div>
         </section>

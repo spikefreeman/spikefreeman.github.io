@@ -4,18 +4,24 @@
     position: relative;
 }
 
+.icon{
+    width: auto;
+    height: 70px;
+}
+
 
 .bgimg {
     background-image: url('../images/profile.jpg');
     background-repeat: no-repeat;
     width: 100%;
+    opacity: 0.6;
 }
 
 
 @media (min-width: 767px){
     .bgimg{
         background-image: none;
-        background-color: #F7E8D3;
+        background-color: #FFFFFF;
         width: 100% ;
     }
 }
