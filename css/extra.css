@@ -11,11 +11,28 @@
 
 
 .bgimg {
+    position: relative;
+    width: 100%;
+    
+}
+
+.bgimg::before {
+    content: "";
     background-image: url('../images/profile.jpg');
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: cover;
+    position: absolute;
     opacity: 0.6;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 }
+
+.top {
+    position: relative;
+}
+
 
 
 @media (min-width: 767px){
@@ -23,6 +40,18 @@
         background-image: none;
         background-color: #FFFFFF;
         width: 100% ;
+        opacity: 1;
+    }
+    .bgimg::before {
+        content: "";
+        background-image: none;
+        background-repeat: no-repeat;
+        position: absolute;
+        opacity: 0.6;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
     }
 }
 
